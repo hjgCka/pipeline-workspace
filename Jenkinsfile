@@ -11,7 +11,6 @@ pipeline {
          steps {
             echo 'build code'
 			sh "mvn -version"
-			sh "mvn -X"
 			sh "printenv"
          }
       }
