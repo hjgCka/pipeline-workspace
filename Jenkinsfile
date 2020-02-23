@@ -15,6 +15,11 @@ pipeline {
 			sh "printenv"
          }
       }
-	  
+   }
+
+   post {
+      always {
+         cleanWs()
+      }
    }
 }
